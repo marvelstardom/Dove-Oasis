@@ -328,6 +328,23 @@ li .hero-img {
   margin-right: -15px;
   *zoom: 1; 
 }
+
+@media screen and (max-width: 990px) {
+  .row {
+      display: block !important;
+      padding: 40px;
+      *zoom: 1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+  .row {
+    display: block !important;
+    padding: 40px;
+    *zoom: 1;
+  }
+} 
+
   .row:after {
     content: " ";
     clear: both;
@@ -1294,18 +1311,18 @@ li .hero-img {
       display: block;
       overflow: hidden;
       height: 0; }
-    .hero-slider .slides li {
-      /* filter: brightness(50%); */
-     }
   .hero-slider .slide-content {
     padding: 80px;
    }
     @media screen and (max-width: 990px) {
       .hero-slider .slide-content {
-        width: 50%; } }
+        width: 100% !important;
+        padding: 60px 30px 50px 30px !important; 
+      } }
     @media screen and (max-width: 480px) {
       .hero-slider .slide-content {
-        width: 100%; } }
+        width: 100%; 
+      } }
     .hero-slider .slide-content .slide-title {
       font-size: 60px;
       font-size: 5.1875em;
@@ -1313,16 +1330,73 @@ li .hero-img {
       margin-bottom: 30px; 
       color: white;
     }
+        @media screen and (max-width: 990px) {
+          .hero-slider .slide-content .slide-title {
+              /* font-size: 20px; */
+              font-size: 3em;
+              font-weight: 600;
+              margin-bottom: 30px;
+              color: white;
+          }
+        }
+    
+        @media screen and (max-width: 480px) {
+          .hero-slider .slide-content .slide-title {
+            /* font-size: 20px; */
+            font-size: 3em;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: white;
+          }
+        }
       .hero-slider .slide-content .slide-title strong {
-        color: #0f75bd;
+        color: #189dfc;
         display: block;
-        font-weight: 500; }
+        font-weight: 500; 
+      }
+        @media screen and (max-width: 990px) {
+          .hero-slider .slide-content .slide-title strong {
+            color: #189dfc;
+            /* display: block; */
+            font-weight: 500;
+          } }
+        @media screen and (max-width: 480px) {
+          .hero-slider .slide-content .slide-title strong {
+            color: #189dfc;
+            /* display: block; */
+            font-weight: 500;
+          }
+        }
     .hero-slider .slide-content p {
       line-height: 1;
       margin-bottom: 50px; 
       color: white;
       padding: 0 120px;
     }
+      @media screen and (max-width: 990px) {
+        .hero-slider .slide-content p {
+            line-height: 1;
+            margin-bottom: 50px;
+            color: white;
+            padding: 0px !important;
+            font-size: 1.4em;
+          }
+          .hero-slider .slide-content a {
+            font-size: 1.3em;
+          }
+       }
+      @media screen and (max-width: 480px) {
+      .hero-slider .slide-content p {
+          line-height: 1;
+          margin-bottom: 50px;
+          color: white;
+          padding: 0px !important;
+          font-size: 1.4em;
+        }
+         .hero-slider .slide-content a {
+            font-size: 1.3em;
+          }
+      }
   .hero-slider .flex-control-nav {
     list-style: none;
     position: absolute;
@@ -1355,7 +1429,26 @@ li .hero-img {
 
 .section-title {
   font-size: 48px;
-  font-size: 3em; }
+  font-size: 3em; 
+  font-weight: 600;
+}
+  @media screen and (max-width: 990px) {
+  .section-title {
+      font-size: 2.5em;
+      padding: 0 0px !important;
+      margin-bottom: 10px !important;
+      margin-top: 60px;
+      font-weight: 600;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .section-title {
+      font-size: 2.5em;
+      padding: 0 0px !important;
+      margin-bottom: 10px !important;
+      font-weight: 600;
+    }
+  }
 
 .section-subtitle {
   font-size: 30px;
@@ -1367,6 +1460,16 @@ li .hero-img {
 .feature {
   margin-bottom: 30px;
   text-align: center; }
+    @media screen and (max-width: 990px) {
+      .feature {
+        margin-bottom: 60px;
+      }
+    }
+     @media screen and (max-width: 480px) {
+      .feature {
+        margin-bottom: 60px;
+      }
+    }
   .feature i {
     font-size: 48px;
     font-size: 3em;
@@ -1379,6 +1482,27 @@ li .hero-img {
     margin-bottom: 20px;
     color: #0f75bd;
     font-weight: 400; }
+    @media screen and (max-width: 990px) {
+      .feature .feature-title {
+          /* font-size: 20px; */
+          font-size: 2em;
+          margin-bottom: 20px;
+          color: #0f75bd;
+          font-weight: 400;
+        }
+        .feature p {
+          font-size: 1.5em;
+        }
+    }
+        @media screen and (max-width: 480px) {
+          .feature .feature-title {
+            /* font-size: 20px; */
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #0f75bd;
+            font-weight: 400;
+          }
+        }
 
 .text-center {
   text-align: center; }
@@ -1725,6 +1849,28 @@ li .hero-img {
     .site-footer .widget-area .widget-title {
       font-size: 20px;
       font-size: 1.5rem; }
+       @media screen and (max-width: 990px) {
+      .site-footer .widget-area .widget-title {
+          font-size: 2.5em;
+        }
+        .site-footer .widget-area address {
+          font-size: 1.5em;
+        }
+        .site-footer .widget-area a {
+          font-size: 1.5em;
+        }
+    }
+     @media screen and (max-width: 480px) {
+      .site-footer .widget-area .widget-title {
+          font-size: 2.5em;
+        }
+        .site-footer .widget-area address {
+          font-size: 1.5em;
+        }
+        .site-footer .widget-area a {
+          font-size: 1.5em;
+        }
+    }
     .site-footer .widget-area a {
       color: #28292a; }
     .site-footer .widget-area ul {
@@ -1736,12 +1882,29 @@ li .hero-img {
     font-size: 14px;
     font-size: 1rem; }
   .site-footer .footer-navigation {
-    margin-bottom: 30px; }
+    margin-bottom: 30px; 
+  }
+    @media screen and (max-width: 990px) {
+      .site-footer .footer-navigation {
+          font-size: 1.4em;
+        }
+    }
+    @media screen and (max-width: 480px) {
+      .site-footer .footer-navigation {
+          font-size: 1.4em;
+        }
+    }
     .site-footer .footer-navigation a {
       color: white;
       padding: 0 10px;
       border-right: 1px solid white;
       line-height: 20px; }
+      @media screen and (max-width: 990px) {
+        .site-footer .colophon {
+          padding: 0 50px;
+          font-size: 1.2em;
+        }
+      }
       .site-footer .footer-navigation a:last-child {
         border-right: none; }
   .site-footer .colophon {
