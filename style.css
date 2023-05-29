@@ -1181,9 +1181,22 @@ li .hero-img {
   #branding .site-title {
     margin-bottom: 0;
     font-size: 20px;
-    font-size: 1.25em; 
+    font-size: 2em; 
     text-align: left;
   }
+  .description {
+    font-size: 1em;
+  }
+  @media screen and (max-width: 990px) {
+  .description {
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .description {
+    font-size: 1.3em;
+  }
+}
     #branding .site-title a {
       color: #768089; }
 
@@ -1278,7 +1291,9 @@ li .hero-img {
     .mobile-navigation .menu a {
       padding: 20px 0;
       display: block;
-      color: white; }
+      color: white;
+      font-size: 1.4em;
+     }
     .mobile-navigation .menu .current-menu-item a {
       color: #1392ec; }
 
